@@ -1,0 +1,5 @@
+def sum3(nums):
+	sum = 0
+	for x in range(3):
+		sum += nums[x]
+	return sum

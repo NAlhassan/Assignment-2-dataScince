@@ -1,0 +1,9 @@
+def count_code(str):
+	counter = 0
+	for x in range(len(str) - 3):
+		if str[x] == 'c' and str[x + 1] == 'o' and str[x + 3] == 'e':
+			counter += 1
+	return counter
+
+
+#print(count_code('codexxcode'))

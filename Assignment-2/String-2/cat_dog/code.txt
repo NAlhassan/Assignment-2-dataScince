@@ -1,0 +1,17 @@
+def cat_dog(str):
+	
+	countD = 0
+	countC = 0
+	
+	for x in range(len(str) - 2):
+		if str[x] == 'd' and str[x + 1] == 'o' and str[x + 2] == 'g':
+			countD += 1
+			#print(countD)
+		elif str[x] == 'c' and str[x + 1] == 'a' and str[x + 2] == 't':
+			countC += 1
+			#print(countC)	
+
+
+	return (countC == countD)
+
+#print(cat_dog('1cat1cadodog'))

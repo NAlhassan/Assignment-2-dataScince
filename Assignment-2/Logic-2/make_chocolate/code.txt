@@ -1,0 +1,26 @@
+def make_chocolate(small, big, goal):
+	if big * 5 == goal:
+		return 0
+	elif big * 5 < goal:
+		if big * 5 + small == goal:
+			return small
+		elif big * 5 + small > goal:
+			for x in range(small):
+				if big * 5 + x == goal:
+					return x
+		else:
+			return -1
+	else:
+		for x in range(big):
+			if goal - x * 5 < 5:
+				for i in range(small + 1):
+					if x * 5 + i == goal:
+						return i
+				if goal < big * 5:					
+					#print(1000000)
+					for i in range(small + 1):
+						if i == goal:
+							return i
+					return -1			
+
+#print(make_chocolate(1, 2, 6))

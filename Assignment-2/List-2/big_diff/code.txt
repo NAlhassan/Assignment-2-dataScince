@@ -1,0 +1,11 @@
+def big_diff(nums):
+	mx = nums[0]
+	mn = nums[0]
+
+	for x in range(len(nums)):
+		mx = max(mx, nums[x])
+		mn = min(mn, nums[x])
+
+	return mx - mn
+
+#print(big_diff([2, 10, 7, 2]))

@@ -1,0 +1,12 @@
+def array_front9(nums):
+	count, counter = False, 0
+	for x in nums:
+		counter+=1
+		if counter > 4:
+			break
+		else:
+			if x == 9:
+				count = True
+				break
+	    
+	return count

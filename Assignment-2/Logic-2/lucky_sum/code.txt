@@ -1,0 +1,15 @@
+def lucky_sum(a, b, c):
+  sum = 0
+  if a == 13:
+    return sum
+  elif a!= 13:
+    sum += a
+  if b == 13:
+    return sum
+  elif b!= 13:
+    sum += b
+  if c == 13:
+    return sum
+  elif c != 13:
+    sum += c
+  return sum

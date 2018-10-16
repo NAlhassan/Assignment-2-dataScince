@@ -1,0 +1,18 @@
+def no_teen_sum(a, b, c):
+  sum = 0
+  a = fix_teen(a)
+  b = fix_teen(b)
+  c = fix_teen(c)
+  
+  sum = a + b + c
+  return sum
+  
+  
+  
+def fix_teen(n):
+  if n == 15 or n == 16:
+    return n
+  elif n >= 13 and n <= 19:
+    return 0
+  else:
+  	return n
